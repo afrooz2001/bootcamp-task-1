@@ -1,0 +1,251 @@
+@font-face {
+    font-family: vazir;
+    src: url(assets/fonts/Vazir-Light.woff) format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: vazir;
+    src: url(assets/fonts/Vazir-Bold.woff) format("woff");
+    font-weight: 700;
+    font-style: bold;
+}
+
+body{
+    font-family: vazir;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+:root {
+    --color-primary:#219f95;
+    --color-secondry:#afcedd;
+}
+
+
+h2{
+    margin-top: 3rem;
+    margin-right: 5rem;
+}
+
+.container{
+    /* background-color: rgb(226, 226, 172); */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    
+}
+
+.table{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 20%;
+}
+
+/* .table-item1{
+    background-color: blue;
+}
+
+.table-item2{
+    background-color: rgb(162, 0, 255);
+}
+
+.table-item3{
+    background-color: rgb(0, 162, 255);
+}
+
+.table-item4{
+    background-color: rgb(255, 0, 234);
+}
+
+.table-item5{
+    background-color: rgb(255, 123, 0);
+}
+
+.table-item6{
+    background-color: rgb(255, 0, 0);
+} */
+  
+
+
+
+
+/*    table button items     */
+
+
+.table-info{
+    /* background-color: #7ac9c2; */
+    width: 45%;
+}
+
+.info-item-1{
+    /* background-color: #c1c97a; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+
+.info-item-2{
+    /* background-color: #c6d445; */
+    display: flex;
+    padding: 0.5rem 0;
+    
+}
+
+.btn-info-item{
+    background-color: var(--color-secondry);
+    padding: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.btn-info-item-p1{
+    grid-column: 2/ span 4;
+    grid-row: 1/2;
+    margin-right: 0.5rem;
+    padding-top: 1rem;
+    color: rgb(20, 20, 145);
+    font-size: 19px;
+}
+
+.btn-info-item-p2{
+    grid-column: 1/ span 4;
+    grid-row: 2/3;
+    margin-top: 1rem;
+    font-size: 20px;
+}
+
+.btn-info-item-p3{
+    grid-column: 1/ span 4;
+    grid-row: 3/4;
+    font-size: 13px;
+}
+
+.btn-info-item-img{
+    width: 30%;
+}
+   
+.btn-info-item-p4{
+    align-self: center;
+    margin-right: 1rem;
+}
+
+img{
+    width: 30%;
+    height: 30%;
+    border-radius: 10px;
+}
+
+
+
+
+/*     table-button    */
+
+
+
+
+
+.table-button{
+    /* background-color: rgb(228, 40, 156); */
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+.table-button-p{
+   color: rgb(134, 145, 145);
+   align-self: flex-end;
+}
+
+.table-button-btn{
+  border: none;
+  padding: 1rem;
+  width: 80%;
+  align-self: center;
+  border-radius: 10px;
+  font-size: 18px;
+  background-color: var(--color-primary);
+  color:azure ;
+  margin-top: 40%;
+}
+
+
+
+
+/*  ---medias---     */
+
+
+
+@media screen and (max-width:1024px) {
+    .container{
+        /* background-color: rgb(126, 206, 226); */
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 1rem;
+        
+    }
+}
+
+@media screen and (max-width:850px) {
+    .container{
+        /* background-color: rgb(126, 206, 226); */
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        
+    }
+    .table{
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-evenly; */
+    }
+
+    .table-info{
+        width: 90%;
+    }
+
+    .table-button{
+        /* background-color: rgb(228, 40, 156); */
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .container{
+        /* background-color: rgb(126, 206, 226); */
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        
+    }
+    .table{
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-evenly; */
+    }
+
+    .table-info{
+        width: 90%;
+    }
+
+    .table-button{
+        /* background-color: rgb(228, 40, 156); */
+        width: 90%;
+    }
+     
+    
+}
